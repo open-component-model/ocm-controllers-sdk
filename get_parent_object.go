@@ -10,16 +10,15 @@ import (
 
 // GetParentObject returns the first find in the owner references of a given object.
 // T denotes the type that the user wants returned.
-func GetParentObject[T client.Object](ctx context.Context, c client.Client, obj client.Object, kind, group string) (T, error) {
-	var result T
-	for _, ref := range obj.GetOwnerReferences() {
+func GetParentObject(ctx context.Context, c client.Client, kind, group string, source, parent client.Object) error {
+	for _, ref := range source.GetOwnerReferences() {
 		if ref.Kind != kind {
 			continue
 		}
 
 		gv, err := schema.ParseGroupVersion(ref.APIVersion)
 		if err != nil {
-			return result, err
+			return fmt.Errorf("failed to parse group version: %w", err)
 		}
 
 		if gv.Group != group {
@@ -27,16 +26,16 @@ func GetParentObject[T client.Object](ctx context.Context, c client.Client, obj 
 		}
 
 		key := client.ObjectKey{
-			Namespace: obj.GetNamespace(),
+			Namespace: source.GetNamespace(),
 			Name:      ref.Name,
 		}
 
-		if err := c.Get(ctx, key, result); err != nil {
-			return result, fmt.Errorf("failed to get parent Source: %w", err)
+		if err := c.Get(ctx, key, parent); err != nil {
+			return fmt.Errorf("failed to get parent Source: %w", err)
 		}
 
-		return result, nil
+		return nil
 	}
 
-	return result, fmt.Errorf("parent not found")
+	return fmt.Errorf("parent not found")
 }

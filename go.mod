@@ -6,6 +6,7 @@ require (
 	github.com/containers/image/v5 v5.20.0
 	github.com/mandelsoft/vfs v0.0.0-20220805210647-bf14a11bfe31
 	github.com/open-component-model/ocm v0.0.1-0.20220914050144-82476b46c507
+	github.com/stretchr/testify v1.8.0
 	k8s.io/api v0.25.0
 	k8s.io/apimachinery v0.25.0
 )
@@ -87,6 +88,7 @@ require (
 	github.com/opencontainers/image-spec v1.0.3-0.20211202193544-a5463b7f9c84 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_golang v1.12.2 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.32.1 // indirect
