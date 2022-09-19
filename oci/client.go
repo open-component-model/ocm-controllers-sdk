@@ -34,3 +34,12 @@ func (c *Client) Push(ctx context.Context, artifactPath, sourcePath string, meta
 	}
 	return nil
 }
+
+// Pull downloads an artifact from an OCI repository and extracts the content to the given directory.
+func (c *Client) Pull(ctx context.Context, outDir string) (*fclient.Metadata, error) {
+	metadata, err := c.client.Pull(ctx, c.url, outDir)
+	if err != nil {
+		return nil, fmt.Errorf("failed to pull oci image: %w", err)
+	}
+	return metadata, nil
+}
