@@ -18,7 +18,7 @@ import (
 // ConfigureTemplateFilesystem takes a version access and a resource name and sets up a virtual filesystem to work with.
 func ConfigureTemplateFilesystem(ctx context.Context, cv ocm.ComponentVersionAccess, resourceName string) (vfs.FileSystem, error) {
 	// get the template
-	_, templateBytes, err := getResourceForComponentVersion(cv, resourceName)
+	_, templateBytes, err := GetResourceForComponentVersion(cv, resourceName)
 	if err != nil {
 		return nil, fmt.Errorf("template error: %w", err)
 	}
@@ -37,7 +37,8 @@ func ConfigureTemplateFilesystem(ctx context.Context, cv ocm.ComponentVersionAcc
 	return virtualFS, nil
 }
 
-func getResourceForComponentVersion(cv ocm.ComponentVersionAccess, resourceName string) (ocm.ResourceAccess, *bytes.Buffer, error) {
+// GetResourceForComponentVersion returns the raw resource and the access for that resource.
+func GetResourceForComponentVersion(cv ocm.ComponentVersionAccess, resourceName string) (ocm.ResourceAccess, *bytes.Buffer, error) {
 	resource, err := cv.GetResource(ocmmeta.NewIdentity(resourceName))
 	if err != nil {
 		return nil, nil, err
