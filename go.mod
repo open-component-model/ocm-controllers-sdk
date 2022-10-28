@@ -6,11 +6,10 @@ replace google.golang.org/grpc => google.golang.org/grpc v1.29.0
 
 require (
 	github.com/containers/image/v5 v5.20.0
-	github.com/distribution/distribution/v3 v3.0.0-20220907155224-78b9c98c5c31
 	github.com/fluxcd/pkg/oci v0.9.0
 	github.com/google/go-containerregistry v0.11.0
 	github.com/mandelsoft/vfs v0.0.0-20220805210647-bf14a11bfe31
-	github.com/open-component-model/ocm v0.0.1-0.20220914050144-82476b46c507
+	github.com/open-component-model/ocm v0.0.1-0.20221027113832-3b98a1369cef
 	github.com/stretchr/testify v1.8.0
 	k8s.io/api v0.25.0
 	k8s.io/apimachinery v0.25.0
@@ -53,20 +52,18 @@ require (
 	github.com/containers/ocicrypt v1.1.3 // indirect
 	github.com/containers/storage v1.38.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/distribution/distribution/v3 v3.0.0-20220907155224-78b9c98c5c31 // indirect
 	github.com/docker/cli v20.10.17+incompatible // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
 	github.com/docker/docker v20.10.17+incompatible // indirect
 	github.com/docker/docker-credential-helpers v0.6.4 // indirect
 	github.com/docker/go v1.5.1-1.0.20160303222718-d30aec9fd63c // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
-	github.com/docker/go-events v0.0.0-20190806004212-e31b211e4f1c // indirect
 	github.com/docker/go-metrics v0.0.1 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
-	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7 // indirect
 	github.com/emicklei/go-restful/v3 v3.8.0 // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
 	github.com/evanphx/json-patch/v5 v5.6.0 // indirect
-	github.com/felixge/httpsnoop v1.0.1 // indirect
 	github.com/fluxcd/pkg/sourceignore v0.2.0 // indirect
 	github.com/fluxcd/pkg/untar v0.2.0 // indirect
 	github.com/fluxcd/pkg/version v0.2.0 // indirect
@@ -83,16 +80,13 @@ require (
 	github.com/golang-jwt/jwt v3.2.1+incompatible // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/gomodule/redigo v1.8.2 // indirect
 	github.com/google/gnostic v0.6.9 // indirect
 	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/google/go-github/v45 v45.2.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/gorilla/handlers v1.5.1 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
-	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
@@ -104,6 +98,7 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mandelsoft/filepath v0.0.0-20220503095057-4432a2285b68 // indirect
+	github.com/mandelsoft/logging v0.0.0-20221012190501-e17f7961076e // indirect
 	github.com/mandelsoft/spiff v1.7.0-beta-3 // indirect
 	github.com/marstr/guid v1.1.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
@@ -131,6 +126,7 @@ require (
 	github.com/spf13/cobra v1.5.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/theupdateframework/notary v0.7.0 // indirect
+	github.com/tonglil/buflogr v1.0.1 // indirect
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	github.com/vbatts/tar-split v0.11.2 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
