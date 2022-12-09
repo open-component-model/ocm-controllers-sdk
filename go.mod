@@ -9,7 +9,7 @@ require (
 	github.com/fluxcd/pkg/oci v0.9.0
 	github.com/google/go-containerregistry v0.11.0
 	github.com/mandelsoft/vfs v0.0.0-20220805210647-bf14a11bfe31
-	github.com/open-component-model/ocm v0.0.1-0.20221027113832-3b98a1369cef
+	github.com/open-component-model/ocm v0.0.1-0.20221209065118-a9f3ac5ef659
 	github.com/stretchr/testify v1.8.0
 	k8s.io/api v0.25.0
 	k8s.io/apimachinery v0.25.0
@@ -98,7 +98,7 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mandelsoft/filepath v0.0.0-20220503095057-4432a2285b68 // indirect
-	github.com/mandelsoft/logging v0.0.0-20221012190501-e17f7961076e // indirect
+	github.com/mandelsoft/logging v0.0.0-20221114215048-ab754b164dd6 // indirect
 	github.com/mandelsoft/spiff v1.7.0-beta-3 // indirect
 	github.com/marstr/guid v1.1.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
@@ -123,7 +123,7 @@ require (
 	github.com/prometheus/common v0.32.1 // indirect
 	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
-	github.com/spf13/cobra v1.5.0 // indirect
+	github.com/spf13/cobra v1.6.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/theupdateframework/notary v0.7.0 // indirect
 	github.com/tonglil/buflogr v1.0.1 // indirect
@@ -132,13 +132,13 @@ require (
 	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
-	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e // indirect
-	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
+	golang.org/x/crypto v0.1.0 // indirect
+	golang.org/x/net v0.1.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220718184931-c8730f7fcb92 // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
-	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
-	golang.org/x/term v0.0.0-20220526004731-065cf7ba2467 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/term v0.1.0 // indirect
+	golang.org/x/text v0.4.0 // indirect
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.2.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
