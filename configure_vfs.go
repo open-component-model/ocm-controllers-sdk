@@ -16,7 +16,7 @@ import (
 	"github.com/open-component-model/ocm/pkg/contexts/ocm"
 	ocmmeta "github.com/open-component-model/ocm/pkg/contexts/ocm/compdesc/meta/v1"
 	"github.com/open-component-model/ocm/pkg/contexts/ocm/cpi"
-	"github.com/open-component-model/ocm/pkg/utils"
+	"github.com/open-component-model/ocm/pkg/utils/tarutils"
 )
 
 // ConfigureTemplateFilesystem takes a version access and a resource name and sets up a virtual filesystem to work with.
@@ -34,7 +34,7 @@ func ConfigureTemplateFilesystem(ctx context.Context, cv ocm.ComponentVersionAcc
 	}
 
 	// extract the template
-	if err := utils.ExtractTarToFs(virtualFS, templateBytes); err != nil {
+	if err := tarutils.ExtractTarToFs(virtualFS, templateBytes); err != nil {
 		return nil, fmt.Errorf("extract tar error: %w", err)
 	}
 
